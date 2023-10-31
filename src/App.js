@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -6,8 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 import Root from "./Root";
-import Home from "./view/Home/Home";
-import ErrorPage from "./view/Error/Error";
+import Home from "./view/Home";
+import ErrorPage from "./view/Error";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
