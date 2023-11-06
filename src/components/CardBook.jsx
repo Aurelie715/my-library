@@ -3,11 +3,13 @@ import styles from './CardBook.module.scss'
 
 export default function CardBook() {
   return (
-    <div>
-        <img src="" alt="" />
-        <p className={styles.title}>Des moutons partout !</p>
-        <p className={styles.author}>Haluka NOHANA</p>
-        <p className={styles.artist}>Haluka NOHANA</p>
+    <div className={styles.card}>
+      <img src="./panique-a-la-ferme.jpg" alt="" />
+      <div className={styles["card-info"]}>
+        <p className={styles.title}>Panique à la ferme</p>
+        <p className={styles.author}>Christine DORNER</p>
+      </div>
+
     </div>
   )
 }

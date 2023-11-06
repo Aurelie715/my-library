@@ -1,0 +1,19 @@
+@import '../assets/variables.scss';
+
+.container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: $secondary-color;
+    
+}
+
+.home-container {
+    height: 100%;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 70px;
+    margin-bottom: 30px;
+}
