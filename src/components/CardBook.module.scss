@@ -18,16 +18,19 @@
   p {
     margin-block-start: unset;
     margin-block-end: unset;
-    font-size: 14px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
   }
   .title {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .author {
+    font-size: 12px;
   }
   .card-info {
-    padding: 0 10px 10px 10px;
+    padding: 2px 10px 10px 10px;
     height: 20%;
   }
 }

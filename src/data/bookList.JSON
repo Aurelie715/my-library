@@ -1,0 +1,50 @@
+[
+    {
+        "id": "01",
+        "title": "Dans sa valise",
+        "cover": "dans-sa-valise.jpg",
+        "author": "Clotilde Perrin"
+    },
+    {
+        "id": "02",
+        "title": "Renarde",
+        "cover": "renarde.jpg",
+        "author": "Isabel Thomas"
+    },
+    {
+        "id": "03",
+        "title": "Peut-être",
+        "cover": "peut-etre.jpg",
+        "author": "Kobi Yamada"
+    },
+    {
+        "id": "04",
+        "title": "Premier jour d'école",
+        "cover": "premier-jour-decole.jpg",
+        "author": "Esther van den Berg"
+    },
+    {
+        "id": "05",
+        "title": "Trolls",
+        "cover": "trolls.jpg",
+        "author": "Ellie S.Green"
+    },
+    {
+        "id": "06",
+        "title": "Panique à la ferme",
+        "cover": "panique-a-la-ferme.jpg",
+        "author": "Christina Dorner"
+    },
+    {
+        "id": "07",
+        "title": "Une vie en couleur",
+        "cover": "une-vie-en-couleur.jpg",
+        "author": "Cara Manes"
+    },
+    {
+        "id": "08",
+        "title": "La petite fille du port de chine",
+        "cover": "la-petite-fille-du-port-en-chine.jpg",
+        "author": "Agnès Bertron-Martin"
+    }
+]
