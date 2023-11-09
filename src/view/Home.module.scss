@@ -3,17 +3,20 @@
 .container {
     display: grid;
     grid-template-columns: 25% 75%;
-    background-color: $secondary-color;
-    
+    .home-container {
+        height: 100vh;
+        .books-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            row-gap: 70px;
+            margin-bottom: 30px;
+            justify-items: center;
+        }
+    }
 }
 
-.home-container {
-    height: 100%;
+.link {
+    text-decoration: none;
+    color: black;
 }
 
-.books-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    row-gap: 70px;
-    margin-bottom: 30px;
-}
