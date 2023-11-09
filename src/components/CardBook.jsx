@@ -1,15 +1,14 @@
 import React from 'react'
 import styles from './CardBook.module.scss'
 
-export default function CardBook() {
+export default function CardBook({id, cover, title, author}) {
   return (
-    <article className={styles.card}>
-      <img src="./panique-a-la-ferme.jpg" alt="" />
+    <article id={id} className={styles.card}>
+      <img src={cover} alt="" />
       <div className={styles["card-info"]}>
-        <p className={styles.title}>Panique à la ferme</p>
-        <p className={styles.author}>Christine DORNER</p>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.author}>{author}</p>
       </div>
-
     </article>
   )
 }

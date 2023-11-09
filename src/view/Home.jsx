@@ -3,6 +3,8 @@ import CardBook from '../components/CardBook';
 import styles from './Home.module.scss';
 import Categories from '../components/SideBar/Categories';
 import Header from '../components/Header';
+import BookList from '../data/bookList.json'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -11,32 +13,11 @@ export default function Home() {
       <div className={styles["home-container"]}>
         <Header />
         <div className={styles["books-container"]}>
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
-        <CardBook />
+          {BookList.map(({id, cover, title, author}) => {
+            return (
+              <Link className={styles.link} key={id} to={`/book/${id}`}><CardBook id={id} cover={cover} title={title} author={author}/></Link>
+            )
+          })}
         </div>
       </div>
     </div>
