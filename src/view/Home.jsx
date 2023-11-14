@@ -6,13 +6,16 @@ import Header from "../components/Header";
 import BookList from "../data/bookList.json";
 import { Link } from "react-router-dom";
 import MyBookSearchBar from "../components/Filter/MyBookSearchBar";
+import Filter from "../components/Filter/Filter";
 
 export default function Home() {
   const [searchMyBooks, setSearchMyBooks] = useState("");
   let books = BookList;
   if (searchMyBooks !== "") {
     books = BookList.filter(({ title, author }) => {
-      return [title, author].some((prop) => prop.toLowerCase().indexOf(searchMyBooks.toLowerCase()) !== -1);
+      return [title, author].some(
+        (prop) => prop.toLowerCase().indexOf(searchMyBooks.toLowerCase()) !== -1
+      );
       // return (
       //   title.toLowerCase().indexOf(searchMyBooks.toLowerCase()) !== -1 ||
       //   author.toLowerCase().indexOf(searchMyBooks.toLowerCase()) !== -1
@@ -25,7 +28,10 @@ export default function Home() {
       <Categories className={styles.categories} />
       <div className={styles["home-container"]}>
         <Header />
-        <MyBookSearchBar onSearchMyBookTextChange={setSearchMyBooks} />
+        <div className={styles.filter}>
+          <Filter buttonName="Titre" element1="A à Z" element2="Z à A"/>
+          <MyBookSearchBar onSearchMyBookTextChange={setSearchMyBooks} />
+        </div>
         <div className={styles["books-container"]}>
           {books.map(({ id, cover, title, author }) => {
             return (
